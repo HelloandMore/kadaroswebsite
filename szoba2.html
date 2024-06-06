@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igen Szálloda Weboldala: városi szentély</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Saját stílusfájl -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Saját JavaScript fájl -->
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-image: url(imgs/szoba2.jfif);
+            background-size: cover;
+            background-position-y: -300px;
+            background-repeat: no-repeat;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
+        li {
+            font-size: larger;
+            margin-bottom: 60px;
+        }
+
+        #kiemelkedo {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            text-align: center;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                color: red;
+                transform: scale(1.15);
+            }
+        }
+
+        @keyframes pulsesmall {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                color: lightgray;
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigációs sáv -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark align-self-center">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#szobak"
+                style="animation: pulsesmall 1s ease-in-out 0s infinite alternate both;">Igen Szálloda: vissza a
+                főoldara</a>
+        </div>
+    </nav>
+    <div class="szoba container col-md-12">
+        <h2 id="kiemelkedo">Kiemelkedő tulajdonságok</h2>
+        <ul>
+            <li><b>Király méretű kényelem</b>: Lazítson a király-méretű ágyon, fehér plüss ágyneművel és párnákkal,
+                amelyek nyugodt éjszakát ígérnek.</li>
+            <li><b>Városkép Panoráma</b>: Nézz ki a nagy ablakon, ahogy a város kitárul előtted, a természetes fény
+                fokozza a szoba vonzerejét.</li>
+            <li><b>Reggeli csodás kilátással</b>: Kezdje a napot egy finom, friss gyümölcslével és péksüteményekkel
+                kiegészített reggelivel, amelyet a hangulatos nappaliban szolgálnak fel.</li>
+            <li><b>Elegáns akcentusok</b>: A fa érintések és az ízléses dekoráció meleg hangulatot teremt, a fotel pedig
+                a kikapcsolódásra csábít.</li>
+            <li><b>Kényelem kéznél</b>: A teljesen feltöltött mini-hűtőszekrény kéznél tarthatja kedvenc frissítőit, így
+                biztosítva a legnagyobb kényelmet.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <footer>
+            <div class="keret" style="text-align: center;">
+                <button class="btn btn-primary">Lefoglalom</button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
